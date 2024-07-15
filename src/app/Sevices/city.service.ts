@@ -7,7 +7,7 @@ import { City } from '../Models/citt';
   providedIn: 'root'
 })
 export class CityService {
-  public apiurl = "http://localhost:5148/api/Cities";
+  public apiurl = "https://ganeshreddy0212.bsite.net/api/Cities";
 
   constructor(public http: HttpClient) { }
 

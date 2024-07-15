@@ -7,7 +7,7 @@ import { Contacts } from '../Models/contacts';
 })
 export class ContactsService {
 
-  public apiurl = "http://localhost:5148/api/Contact";
+  public apiurl = "https://ganeshreddy0212.bsite.net/api/Contact";
 
   constructor(public http: HttpClient) { }
 

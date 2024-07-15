@@ -7,7 +7,7 @@ import { Observable, catchError, of, tap } from 'rxjs';
 })
 
 export class ViewCounterService {
-  private apiUrl = 'http://localhost:5148/api/Serviceproviders'; // Replace with your actual API URL
+  private apiUrl = 'https://ganeshreddy0212.bsite.net/api/Serviceproviders'; // Replace with your actual API URL
 
   constructor(private http: HttpClient) { }
 
@@ -35,17 +35,4 @@ export class ViewCounterService {
 }
 
 
-// updateViewCount(id: number): Observable<void> {
-//   return this.http.post<void>(`${this.apiUrl}/${id}`, null);
-// }
-// private viewsMap: Map<number, number> = new Map<number, number>();
 
-
-// getViewCount(id: number): number {
-//   return this.viewsMap.get(id) || 0;
-// }
-
-// incrementViewCount(id: number): void {
-//   const currentCount = this.viewsMap.get(id) || 0;
-//   this.viewsMap.set(id, currentCount + 1);
-// }

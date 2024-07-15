@@ -7,7 +7,7 @@ import { Serviceprovider } from '../Models/serviceProvider';
   providedIn: 'root'
 })
 export class ServiceProviderService {
-  public apiurl = "http://localhost:5148/api/Serviceproviders";
+  public apiurl = "https://ganeshreddy0212.bsite.net/api/Serviceproviders";
 
   constructor(public http: HttpClient) { }
 
