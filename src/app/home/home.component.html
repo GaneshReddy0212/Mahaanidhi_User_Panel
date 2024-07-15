@@ -1,0 +1,11 @@
+<ng-container *ngFor="let i of stars">
+    <i class="fa fa-star cstar_icon" (click)="updateRating(i)" [ngClass]="{'active':i<=rating}"></i>
+</ng-container>
+<!-- <ng-container *ngFor="let serviceProvider of stars">
+    <div>
+        <h5>{{ serviceProvider.businessName }}</h5>
+        <ng-container *ngFor="let i of getRatingArray(serviceProvider.currentRating)">
+            <i class="fa fa-star cstar_icon active"></i>
+        </ng-container>
+    </div>
+</ng-container> -->

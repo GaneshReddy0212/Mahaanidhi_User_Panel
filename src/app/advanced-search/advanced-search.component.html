@@ -1,0 +1,83 @@
+<app-allpages-navbar></app-allpages-navbar>
+
+<div class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-6">
+               <h5 class="advanced_text">Advanced Search</h5>
+            </div>   
+            <div class="col-md-5 col-6">
+                <div class="home_search">
+                    <a routerLink="#" id="link_color">Home</a> / Advanced Search            
+                </div>
+              </div> 
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-12">
+            <div class="card">
+                <div class="space_of_col">
+                 <div  class="space_of_icon search_space">
+                <span><i class="fa fa-search icon_color" style="font-size:20px" ></i>Search</span>
+             </div>
+                <form id="newsletter-form" role="form" action="#">
+                    <div class="input-group input-group-sm input_space">
+                       <input class="form-control form-control-sm" type="text" placeholder="Your email" value="" name="email">
+                            <span class="input-group-btn">
+                              <button type="submit" class="btn btn-sm btn-primary">Save</button>
+                            </span>
+                    </div>
+    
+                </form>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>any category</option>
+                    <option value="1">Real Estate</option>
+                    <option value="2">Infra Developers</option>
+                    <option value="3">Groceries</option>
+                  </select>
+                  <br>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Select one</option>
+                    <option value="1">telengana</option>
+                    <!-- <option value="2">Two</option>
+                    <option value="3">Three</option> -->
+                  </select>
+                  <br>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Select one</option>
+                    <!-- <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option> -->
+                  </select>
+                  <p class="space">search Radius:</p>
+                  <div class="row">
+                    <div class="col-md-3">
+                  <i class="fa fa-crosshairs" style="font-size:20px"></i>
+                </div>
+                <div class="col-md-9">
+                  <!-- <label for="customRange1" class="form-label">Example range</label> -->
+                  <input type="range" class="form-range" id="customRange1">
+                </div>
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>select one</option>
+                    <!-- <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option> -->
+                  </select>
+                        <button class="btn btn-sm btn-success submit-search-button" type="submit">Search</button>
+                    
+                   
+                        <button class="btn btn-sm btn-default reset" type="reset">Reset</button>        
+                  </div>
+        </div>
+        </div>
+
+        <div class="col-md-9">
+            <app-recentsposts></app-recentsposts>
+        </div>
+    </div>
+</div>

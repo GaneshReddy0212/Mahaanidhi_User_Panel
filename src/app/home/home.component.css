@@ -1,0 +1,8 @@
+i {
+    color: rgb(120, 120, 121);
+    cursor: pointer;
+}
+
+.active {
+    color: orange;
+}
