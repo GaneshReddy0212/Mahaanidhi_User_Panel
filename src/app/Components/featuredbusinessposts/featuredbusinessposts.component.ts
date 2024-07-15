@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Serviceprovider } from '../Models/serviceProvider';
-import { ServiceProviderService } from '../Sevices/service-provider.service';
+import { Serviceprovider } from 'src/app/Models/serviceProvider';
+import { ServiceProviderService } from 'src/app/Sevices/service-provider.service';
+
 
 @Component({
   selector: 'app-featuredbusinessposts',

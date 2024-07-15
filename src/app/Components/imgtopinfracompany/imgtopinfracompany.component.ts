@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ServiceProviderService } from '../Sevices/service-provider.service';
-import { Serviceprovider } from '../Models/serviceProvider';
-import { CityService } from '../Sevices/city.service';
-import { ViewCounterService } from '../Sevices/view-counter.service';
-import { Contacts } from '../Models/contacts';
-import { ContactsService } from '../Sevices/contacts.service';
+import { Contacts } from 'src/app/Models/contacts';
+import { Serviceprovider } from 'src/app/Models/serviceProvider';
+import { CityService } from 'src/app/Sevices/city.service';
+import { ContactsService } from 'src/app/Sevices/contacts.service';
+import { ServiceProviderService } from 'src/app/Sevices/service-provider.service';
+import { ViewCounterService } from 'src/app/Sevices/view-counter.service';
+
 
 @Component({
   selector: 'app-imgtopinfracompany',

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Serviceprovider } from '../Models/serviceProvider';
-import { ServiceProviderService } from '../Sevices/service-provider.service';
-import { CityService } from '../Sevices/city.service';
+import { Serviceprovider } from 'src/app/Models/serviceProvider';
+import { CityService } from 'src/app/Sevices/city.service';
+import { ServiceProviderService } from 'src/app/Sevices/service-provider.service';
+
 
 @Component({
   selector: 'app-homepagesidecontaines',

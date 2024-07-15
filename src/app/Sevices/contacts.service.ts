@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Contacts } from '../Models/contacts';
+import { environment } from '../Environment/environment.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactsService {
 
-  public apiurl = "https://ganeshreddy0212.bsite.net/api/Contact";
+  public apiurl = environment.apiUrl + "Contact";
 
   constructor(public http: HttpClient) { }
 

@@ -2,12 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { City } from '../Models/citt';
+import { environment } from '../Environment/environment.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CityService {
-  public apiurl = "https://ganeshreddy0212.bsite.net/api/Cities";
+  public apiurl = environment.apiUrl + "Cities";
 
   constructor(public http: HttpClient) { }
 
