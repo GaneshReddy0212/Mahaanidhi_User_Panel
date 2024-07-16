@@ -36,7 +36,7 @@ h3{
   .background_img div {
     width: 100%;
     height: 100%;
-    background: url("../../assets/images/hm2.jpg");
+    background: url("../../../assets/images/hm2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@ h3{
 .background_img1 div {
     width: 100%;
     height: 100%;
-    background: url("../../assets/images/PanCard_back1.jpeg");
+    background: url("../../../assets/images/PanCard_back1.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@ h3{
 .background_img2 div {
     width: 100%;
     height: 100%;
-    background: url("../../assets/images/TechyTrainEstimates_v1_01.jpg");
+    background: url("../../../assets/images/TechyTrainEstimates_v1_01.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
