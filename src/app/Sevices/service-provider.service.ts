@@ -16,8 +16,8 @@ export class ServiceProviderService {
     return this.http.get(this.apiurl);
   }
 
-  getServiceProviderById(id: number) {
-    return this.http.get(`${this.apiurl}/${id}`);
+  getServiceProviderById(id: number): Observable<Serviceprovider> {
+    return this.http.get<Serviceprovider>(`${this.apiurl}/${id}`);
   }
 
   createServiceProvider(data: Serviceprovider) {

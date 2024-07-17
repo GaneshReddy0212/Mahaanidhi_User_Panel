@@ -36,10 +36,9 @@ export class ImgtopinfracompanyComponent implements OnInit {
   //   } 
   loadServiceProvider(): void {
     this.id = this.route.snapshot.params['id'];
-    this.serviceProviderService.getServiceProviderById(this.id).subscribe((data: any) => {
+    this.serviceProviderService.getServiceProviderById(this.id).subscribe((data: Serviceprovider) => {
+      data.thumnailImagePath = `${environment.ImageUrl}/${data.thumnailImagePath}`;
       this.serviceProvider = data;
-      this.serviceProvider = data.map((spData: any) =>
-        ({ ...spData, thumnailImagePath: `${environment.ImageUrl}/${spData.thumnailImagePath}` }))
       this.viewCounterService.incrementViewCount(this.serviceProvider.id);
     },
       (error) => {
