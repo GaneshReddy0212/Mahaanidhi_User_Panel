@@ -26,7 +26,7 @@
         <div class="card house_card" *ngFor="let sps of sp ">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-6">
-                    <img src="{{ sps.thumnailImagePath }}" class="img_house"
+                    <img [src]="sps.fullThumbnailImagePath" class="img_house"
                         [routerLink]="['/imgtopinfracompany',sps.id]">
                 </div>
                 <div class="col-md-8 col-sm-8 col-6">

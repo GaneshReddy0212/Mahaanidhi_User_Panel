@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { environment } from 'src/app/Environment/environment.service';
 import { Contacts } from 'src/app/Models/contacts';
 import { Serviceprovider } from 'src/app/Models/serviceProvider';
 import { CityService } from 'src/app/Sevices/city.service';
@@ -32,11 +33,13 @@ export class ImgtopinfracompanyComponent implements OnInit {
   }
   //  getViewCount(id: number): number {
   //     return this.viewsMap.get(id) || 0;
-  //   }
+  //   } 
   loadServiceProvider(): void {
     this.id = this.route.snapshot.params['id'];
     this.serviceProviderService.getServiceProviderById(this.id).subscribe((data: any) => {
       this.serviceProvider = data;
+      this.serviceProvider = data.map((spData: any) =>
+        ({ ...spData, thumnailImagePath: `${environment.ImageUrl}/${spData.thumnailImagePath}` }))
       this.viewCounterService.incrementViewCount(this.serviceProvider.id);
     },
       (error) => {
