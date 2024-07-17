@@ -16,7 +16,7 @@ import { ViewCounterService } from 'src/app/Sevices/view-counter.service';
 })
 export class ImgtopinfracompanyComponent implements OnInit {
   contact: Contacts = new Contacts();
-  serviceProvider: Serviceprovider = new Serviceprovider();
+  serviceProvider: Serviceprovider= new Serviceprovider();
   id: number = 0;
   city: any[] = [];
   // stars: Serviceprovider[] = [];

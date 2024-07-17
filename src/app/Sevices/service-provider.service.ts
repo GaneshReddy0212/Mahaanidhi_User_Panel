@@ -29,11 +29,8 @@ export class ServiceProviderService {
     return this.http.put(`${this.apiurl}/${data.id}`, data);
   }
 
-  // deleteServiceProvider(id: number) {
-  //   return this.http.delete(`${this.apiurl}/${id}`);
-  // }
 
   deleteServiceProvider(id: number): Observable<any> {
-    return this.http.delete(`http://localhost:5148/api/Serviceproviders/${id}`);
+    return this.http.delete(`${this.apiurl}/${id}`);
   }
 }
