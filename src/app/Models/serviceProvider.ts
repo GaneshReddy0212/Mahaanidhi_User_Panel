@@ -30,13 +30,7 @@ export class Serviceprovider {
     desciption: string = "";
     title: string = "";
     selectedPackage: string = "";
-    monday!: Date | null;
-    tuesday!: Date | null;
-    wednesday!: Date | null;
-    thursday!: Date | null;
-    friday!: Date | null;
-    saturday!: Date | null;
-    sunday!: Date | null;
+   
     facebook: string = "";
     twitterLink: string = "";
     linkedinLink: string = "";
@@ -44,7 +38,7 @@ export class Serviceprovider {
     googleplusLink: string = "";
     instagramLink: string = "";
     amenitiesId: number = 0;
-    views: number = 0;
+    viewCount: number = 0;
     priceRange: string = "";
 }
 
