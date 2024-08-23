@@ -42,6 +42,7 @@ import { SignupComponent } from './Components/signup/signup.component';
 import { TermsandconditionsComponent } from './Components/termsandconditions/termsandconditions.component';
 import { TopbusinessesComponent } from './Components/topbusinesses/topbusinesses.component';
 import { TopusersinhomepageComponent } from './Components/topusersinhomepage/topusersinhomepage.component';
+import { PaymentComponent } from './Payments/payment/payment.component';
 // import { AdvancedsearchComponent } from './advancedsearch/advancedsearch.component';
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { TopusersinhomepageComponent } from './Components/topusersinhomepage/top
     ImgtopinfracompanyComponent,
     PrivacyandpolicyComponent,
     TermsandconditionsComponent,
+    PaymentComponent,
 
   ],
   imports: [

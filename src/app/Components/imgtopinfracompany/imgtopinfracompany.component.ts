@@ -54,9 +54,7 @@ export class ImgtopinfracompanyComponent implements OnInit {
     return Array.from({ length: rating });
   }
 
-  getViewCount(): number {
-    return this.viewCounterService.getViewCount(this.serviceProvider.id);
-  }
+ 
   onSubmit() {
     this.contactService.createContact(this.contact).subscribe((data: any) => {
       this.contact = data;

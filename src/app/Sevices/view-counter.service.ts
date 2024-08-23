@@ -14,7 +14,7 @@ export class ViewCounterService {
 
   updateViewCount(id: number): Observable<void> {
     // Send a POST request to update the view count in the database
-    return this.http.post<void>(`${this.apiurl}/updateViewCount/${id}`, null);
+    return this.http.put<void>(`${this.apiurl}/updateViewCount/${id}`, null);
   }
 
   private viewsMap: Map<number, number> = new Map<number, number>();

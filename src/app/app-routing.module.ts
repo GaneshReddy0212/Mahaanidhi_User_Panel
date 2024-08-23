@@ -36,6 +36,7 @@ import { SignupComponent } from './Components/signup/signup.component';
 import { TermsandconditionsComponent } from './Components/termsandconditions/termsandconditions.component';
 import { TopbusinessesComponent } from './Components/topbusinesses/topbusinesses.component';
 import { TopusersinhomepageComponent } from './Components/topusersinhomepage/topusersinhomepage.component';
+import { PaymentComponent } from './Payments/payment/payment.component';
 
 
 const routes: Routes = [
@@ -77,7 +78,8 @@ const routes: Routes = [
   { path: "imgtopinfracompany/:id", component: ImgtopinfracompanyComponent },
   { path: "privacyandpolicy", component: PrivacyandpolicyComponent },
   { path: "termsandconditions", component: TermsandconditionsComponent },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  {path:'payment_razorpay',component:PaymentComponent}
 ];
 
 @NgModule({

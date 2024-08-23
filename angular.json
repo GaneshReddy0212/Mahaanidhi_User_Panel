@@ -47,12 +47,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "fileReplacements": [
-                {
-                  "replace": "src/Environments/environment.service.ts",
-                  "with": "src/Environments/environment.prod.ts"
-                }
-              ],
+              
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
